@@ -39,7 +39,7 @@
   background-size: cover;
 }
 
-/* Animation startet erst nach Klick auf Start */
+/* Die Animation startet erst nach dem Klick auf den Start-Knopf, den ich hinzugefügt habe */
 .rock-animation {
   animation: rock 1.33s infinite linear;
 }
