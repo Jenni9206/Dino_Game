@@ -1,4 +1,14 @@
-#score { text-align: center; }
+#score {
+  text-align: center;
+}
+
+#startBtn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
 #game {
   width: 600px;
@@ -7,6 +17,7 @@
   margin: auto;
   background-image: url("./background.jpg");
   background-size: cover;
+  overflow: hidden;
 }
 
 #dino {
@@ -26,12 +37,16 @@
   left: 550px;
   background-image: url("./rock.png");
   background-size: cover;
-  animation: rock 1.33s infinite;
+}
+
+/* Animation startet erst nach Klick auf Start */
+.rock-animation {
+  animation: rock 1.33s infinite linear;
 }
 
 @keyframes rock {
-  0%{left: 550px;}
-  100%{left: -50px;}
+  0% { left: 550px; }
+  100% { left: -50px; }
 }
 
 .jump-animation {
@@ -39,8 +54,8 @@
 }
 
 @keyframes jump {
-  0%{top: 225px;}
-  50%{top: 75px;}
-  75%{top: 75px;}
-  100%{top: 225px;}
+  0% { top: 225px; }
+  50% { top: 75px; }
+  75% { top: 75px; }
+  100% { top: 225px; }
 }
